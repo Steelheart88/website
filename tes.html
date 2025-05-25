@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimas Farhat | Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at center, #1e1e1e 0%, #0f0f0f 80%);
+      opacity: 0.4;
+      z-index: 1;
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    header img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #03e9f4;
+      box-shadow: 0 0 30px #03e9f4;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-top: 20px;
+      color: #03e9f4;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+    }
+
+    nav a {
+      color: #ffffff !important;
+    }
+
+    section {
+      padding: 60px 15px;
+    }
+
+    section h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #03e9f4;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .pendidikan-item, .hobi-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .pendidikan-item i, .hobi-item i {
+      margin-right: 10px;
+      color: #03e9f4;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #03e9f4;
+    }
+
+    .btn-custom {
+      background-color: transparent;
+      border: 2px solid #03e9f4;
+      color: #03e9f4;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #03e9f4;
+      color: #0f0f0f;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #03e9f4;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="content">
+      <img src="https://github.com/Steelheart88/My-Images-/blob/main/DSC_0916%20(1).JPG?raw=true" alt="Foto Profil Dimas">
+      <h1>Dimas Farhat Wijaya</h1>
+      <p>Setiap gambar punya cerita, setiap desain punya makna. Saya menciptakan untuk membagikan keduanya.</p>
+    </div>
+  </header>
+
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobi">Hobi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tentang -->
+  <section id="tentang">
+    <div class="container">
+      <h3>Tentang Saya</h3>
+      <p class="text-center">Saya adalah mahasiswa semester 4 di Program Studi Pendidikan Multimedia yang sedang belajar dan mengembangkan diri di bidang fotografi dan videografi. Saya memiliki minat besar terhadap dunia visual dan senang mencoba berbagai teknik baru. Meskipun masih dalam proses belajar, saya terus berusaha memperluas pengalaman dan memperdalam pemahaman saya terhadap media kreatif digital.
+      </p>
+    </div>
+  </section>
+
+  <!-- Riwayat Pendidikan -->
+  <section id="pendidikan">
+    <div class="container">
+      <h3>Riwayat Pendidikan</h3>
+      <div class="pendidikan-item"><i class="bi bi-mortarboard-fill"></i> 2022 – sekarang: Pendidikan Multimedia</div>
+      <div class="pendidikan-item"><i class="bi bi-laptop-fill"></i> 2019 – 2022: SMK Pasundan 2 Bandung</div>
+      <div class="pendidikan-item"><i class="bi bi-book-fill"></i> 2016 – 2019: SMP Pasundan 2 Cimahi</div>
+      <div class="pendidikan-item"><i class="bi bi-pencil-fill"></i> 2010 – 2016: SDN 041 Cibuntu Warung Muncang</div>
+    </div>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobi">
+    <div class="container">
+      <h3>Hobi</h3>
+    <div class="hobi-item"><i class="bi bi-camera-fill"></i> Memotret / Fotografi</div>
+    <div class="hobi-item"><i class="bi bi-palette-fill"></i> Membuat Desain Karakter</div>
+    <div class="hobi-item"><i class="bi bi-dribbble"></i> Bermain Futsal</div>
+  </div>
+</section>
+
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri">
+    <div class="container">
+      <h3>Galeri Visual</h3>
+      <p class="text-center mb-4">Dokumentasi berbagai karya desain dan hasil eksplorasi fotografi pribadi.</p>
+      <div class="row g-4 gallery">
+        <div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/flipbook1.png" alt="Flipbook Preview" class="gallery-img"></div>
+		<div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/flipbook2.png" alt="Flipbook Preview" class="gallery-img"></div>
+		<div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/flipbook3.png" alt="Flipbook Preview" class="gallery-img"></div>
+		<div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/fotdas1.jpg" alt="Flipbook Preview" class="gallery-img"></div>
+		<div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/fotdas2.jpg" alt="Flipbook Preview" class="gallery-img"></div>
+        <div class="col-md-4"><img src="https://github.com/Steelheart88/image/raw/main/fotdas3.jpg" alt="Flipbook Preview" class="gallery-img"></div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://heyzine.com/flip-book/0a2e271e32.html#page/23" class="btn btn-custom" target="_blank">Lihat Flipbook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <div class="container">
+      <h3>Kontak Saya</h3>
+      <div class="social-icons d-flex justify-content-center mt-3">
+        <a href="https://instagram.com/dmsfwjy_" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://wa.me/628128818503" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:dimasfarhat8@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dimas Farhat. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
